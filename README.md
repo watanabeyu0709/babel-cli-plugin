@@ -1,27 +1,32 @@
-# 这是一个简单的自用babel制作npm包的脚手架
+## Introduce  
 
-### 安装步骤
+this is a simple self use cli for making npm package with babel
 
-    1.请确保全局安装了 babel npm
+## Base on
 
-    2.下载克隆此工程
+node `8.6.0`   
+npm `5.3.0`   
+babel `6.24.1 (babel-core 6.25.0)`
 
-    3.npm install
+### Quick to start
 
-    4.npm run build (编译脚本)
+1.make sure you have install babel npm with global  
+2.download this project  
+3.npm install  
+4.npm run dev `develop mode`  
+5.npm run build  `build mode`  
+6.npm publish 
 
-### 目录结构
+### Directory
 
-> `lib 发布npm包的环境`
-
-> `src 源文件脚本存放目录`
-
-> .gitignore git 忽略文件
-
-> index.js npm官方入口,可以在package.json中配置
-
-> .babelrc babel配置文件
-
-> package.json 包信息
-
-> README.md 说明文档（本文件）
+```
+|-- lib #npm publish folder
+|-- node_modules #node packages
+|-- src #workspace,develop folder
+    |-- plugin.js #main script
+|-- .babelrc #babel conf
+|-- .gitignore #git conf
+|-- index.js #main entry
+|-- package.json #package conf
+|-- README.md #this file
+```
